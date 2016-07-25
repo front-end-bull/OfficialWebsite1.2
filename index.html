@@ -22,13 +22,10 @@
 <script src="resource/js/scrolloverflow.min.js"></script>
 <script src="resource/js/jquery.fullPage.js"></script>
 <script src="resource/js/prefixfree.min.js"></script>
-<script src="resource/js/rainyday.js"></script>
 
 <script src="resource/js/require.js" data-main="resource/js/main.js" defer async="true"></script>
 </head>
-<body onload="rain()">
-  <img alt="rainyday" id="rainyday" style="position:absolute;top:0;z-index:-1;visibility:hidden;width:100%;height:100%;">
-  
+<body>
   <div class="sy-box" id="background">
     <div class="sy-slides-wrap">
       <div class="sy-slides-crop">
@@ -51,12 +48,22 @@
     </div>
   </div>
 
+
+<div id="topBanner">
+    <div id="mainTittle"><a href="#homePage">保险神器</a></div>
+    <div >保险师智能展业工具</div>
+    <div class="l-tittle phone-show"><a href="#aboutusPage">关于我们</a></div>
+    <div class="l-tittle phone-show"><a href="#companyPage">合作机构</a></div>
+    <div class="l-tittle phone-show"><a href="#teamPage">团队介绍</a></div>
+    <div class="l-tittle phone-show"><a href="#problemPage">常见问题</a></div>
+    <div class="l-tittle phone-show"><a href="#funcPage">功能展示</a></div>
+</div>
+
+
+
+
   <div id="fullpage">
     <div class="section homePage">
-      <div class="clearfix logo">
-        <div class="big" data-shadow="保险师智能展业工具">保险神器</div>
-        <!-- <div class="small">保险师智能展业工具</div> -->
-      </div>
       <div class="h1">互联网＋保险的探索者，致力于创造最好用的展业工具</div>
       <div class="h2">我们服务全国500万保险代理人，帮助他们更智能、更快捷、更专业的工作</div>
       <div  class="download">
@@ -75,19 +82,18 @@
       </div>
     </div>
     <div class="section funcPage">
-      <div class="title" >展业神器</div>
+      <div class="title">展业神器</div>
       <div class="describe">我们努力深入代理人群体，只为了能确实的提高展业效率，解决展业难题</div>
       <div class="stage">
-        <div class="container">
+        <div class="container clearfix">
           <div>
              <img  src="resource/img/feilvjisuan.png">
               <div>
-                费率计算
+                利益计算
               </div>
               <div>
-                40余家公司的300款产品
-                <br>
-                更全、更快、更准
+                涵盖40余家公司，更全面<br>的数据支持，
+                更流畅的操<br>作体验
               </div>
           </div>
           <div>
@@ -116,13 +122,11 @@
           <div>
             <img  src="resource/img/duibi.png" >
             <div>
-              产品对比
+              数据对比
             </div>
             <div>
-              真实数据运算，直接让客
-              <br>
-              户看见自身利益，促进产<br>
-              品选择
+              真实数据运算，直接让客<br>
+              户看见自身利益，高下立<br>现
             </div>
           </div>
           <div>
@@ -176,32 +180,48 @@
     <div class="section problemPage">
       <div class="title">常见问题</div>
       <div class="stage">
-        <div class="box">
-          <div class="div1" style="background: url('resource/img/skyscraper.jpg');background-size:3.5rem 5rem;font-weight:bold;">保险神器是永久免费的展业App，所有功能都不会收取任何费用，我们旨在帮助代理人提高工作效率，请放心使用。</div>
-          <div class="div2"></div>
-          <div class="div3"></div>
-          <div class="div4" style="background: url('resource/img/skyscraper.jpg');background-position:-0.01rem 2rem;background-size:3.5rem 5rem;font-weight:bold;">软件是免费的吗?</div>
-          <div class="div5"></div>
-          <div class="div6" style="background: url('resource/img/skyscraper.jpg');background-position:4rem 0rem;background-size:3.5rem 5rem;"></div>
-        </div>
-
-        <div class="box">
-          <div class="div1" style="background: url('resource/img/skyscraper.jpg');background-size:3.5rem 5rem;font-weight:bold;">神器的费率是从各大保险公司的官方渠道获取的，经过我们精算人员的反复核查，所以计算出的保费是准确无误的，请放心使用。</div>
-          <div class="div2"></div>
-          <div class="div3"></div>
-          <div class="div4" style="background: url('resource/img/skyscraper.jpg');background-position:-0.01rem 2rem;background-size:3.5rem 5rem;font-weight:bold;">你们的费率计算准确吗？</div>
-          <div class="div5"></div>
-          <div class="div6" style="background:  url('resource/img/skyscraper.jpg');background-position:4rem 0rem;background-size:3.5rem 5rem;"></div>
-        </div>
-
-
-        <div class="box">
-          <div class="div1" style="background:  url('resource/img/skyscraper.jpg');background-size:3.5rem 5rem;background-position:3rem 0;font-weight:bold;">神器的对比功能十分强大，您可以任选两个产品，输入真实的客户信息和需要的保障，神器会自动对比出两款产品各项保障责任的区别，帮助您更专业的选择产品，讲解业务。</div>
-          <div class="div2"></div>
-          <div class="div3"></div>
-          <div class="div4" style="background:  url('resource/img/skyscraper.jpg');background-size:3.5rem 5rem;background-position:3rem 2rem;font-weight:bold;">产品对比功能是什么意思？</div>
-          <div class="div5" style="background:  url('resource/img/skyscraper.jpg');background-size:3.5rem 5rem;background-position:-3.5rem 0;"></div>
-          <div class="div6" ></div>
+        <img  src="resource/img/shouji1.png" id="shouji1" alt="" style="position:absolute;top:-0.2rem;height:4.71rem;z-index:100;">
+        <img  src="resource/img/shouji2.png" id="shouji2" alt="" style="position:absolute;top:0rem;height:4.3rem;left:2rem;z-index:99;">
+        <div class="right">
+            <div class="row clearfix">
+                <div style="width:2.2rem;height:0.4rem;line-height:0.4rem;text-align:left;background-color:#1f99f8;color:white;padding-left:0.08rem;font-size:0.2rem;font-weight:bold;">
+                  Q : 软件是免费的吗？
+                </div>
+                <div style="line-height:0.3rem;text-align:left;width:7rem;padding:0.2rem 0;height:0.8rem;font-size:0.2rem;color:black;">
+                  <div style="float:left;width:0.34rem;">
+                    A :
+                  </div>
+                  <div style="float:left;">
+                    保险神器是永久免费的展业App，所有功能都不会收取任何费用，我<br>们旨在帮助代理人提高工作效率，请放心使用。
+                  </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:0.3rem;">
+                <div style="width:2.8rem;height:0.4rem;line-height:0.4rem;text-align:left;background-color:#1f99f8;color:white;padding-left:0.08rem;font-size:0.2rem;font-weight:bold;">
+                  Q : 你们的利益计算准确吗？
+                </div>
+                <div style="line-height:0.3rem;text-align:left;width:8rem;padding:0.2rem 0;height:0.8rem;font-size:0.2rem;color:black;">
+                  <div style="float:left;width:0.34rem;">
+                    A :
+                  </div>
+                  <div style="float:left;">
+                    神器的数据是从各大公司的官方渠道获取的，经过我们专业人员的反<br>复核查，所以计算出的结果是准确无误的，请放心使用。
+                  </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:0.3rem;">
+                <div style="width:3rem;height:0.4rem;line-height:0.4rem;text-align:left;background-color:#1f99f8;color:white;padding-left:0.08rem;font-size:0.2rem;font-weight:bold;">
+                  Q : 对比功能是什么意思？
+                </div>
+                <div style="line-height:0.3rem;text-align:left;width:7.5rem;padding:0.2rem 0;height:1.2rem;font-size:0.2rem;color:black;">
+                  <div style="float:left;width:0.34rem;">
+                    A :
+                  </div>
+                  <div style="float:left;">
+                    神器的对比功能十分强大，您可以输入真实的客户信息和需要的保障，<br>神器会自动对比出不同项目各项保障责任的区别，帮助您更专业的讲<br>解业务。
+                  </div>
+                </div>
+            </div>
         </div>
       </div> 
     </div>
@@ -240,7 +260,7 @@
     </div>
     <div class="section aboutusPage">
       <div class="title">关于我们</div>
-      <div class="describe">保险神器（北京财未来科技有限公司）是一家致力于改进保险代理人展业方式的科技公司。我们以打造代理人的移动展业平台为愿景，提供包括计划书系统、费率计算与对比和客户管理功能在内的展业工具，帮助全国代理人更专业、高效、透明、轻松的工作，将合适的产品卖给需要的客户。</div>
+      <div class="describe">保险神器（北京财未来科技有限公司）是一家致力于改进保险代理人展业方式的科技公司。我们以打造代理人的移动展业平台为愿景，提供包括计划书系统、利益计算与对比和客户管理功能在内的展业工具，帮助全国代理人更专业、高效、透明、轻松的工作，让客户得到适合他的保障。</div>
       <div class="curtain">
         <!-- <div class="text"><span>保险神器</span></div> -->
         <div class="container clearfix">
@@ -287,18 +307,7 @@
 
   <script type="text/javascript">
 
-    function rain(){
-      var image = document.getElementById('rainyday');
-      image.onload = function() {
-          var engine = new RainyDay({
-              image: this
-          });
-          engine.rain([ [1, 2, 8000] ]);
-          engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
-      };
-      image.crossOrigin = 'anonymous';
-      image.src = 'http://o8c4tlqah.bkt.clouddn.com/7.jpg';
-    }
+
 
     var $background = $('#background')
 
@@ -306,14 +315,14 @@
       $('#fullpage').fullpage({
           //Navigation
           menu: '#menu',
-          lockAnchors: false,
+          // lockAnchors: true,
           anchors:['homePage','funcPage','problemPage','teamPage','companyPage','aboutusPage'],
           navigation: true,
           navigationPosition: 'right',
           // navigationTooltips: ['firstSlide', 'secondSlide'],
           // showActiveTooltip: true,
           slidesNavigation: true,
-          slidesNavPosition: 'bottom',
+          slidesNavPosition: 'right',
 
           //Scrolling
           css3: false,
@@ -357,51 +366,9 @@
           //events
           onLeave: function(index, nextIndex, direction){
             var leavingSection = $(this);
-            if(index == 4 && direction =='down'){
-              $background.hide()
-            }else if(index ==5){
-              $background.show()
-            }else if(index==6 && direction=='up'){
-              $background.hide()
-            }
           },
           afterLoad: function(anchorLink, index){
             var loadedSection = $(this);
-            //using index
-
-            if(index == 2){
-              $('.funcPage .container').addClass('keepGoing')
-              $('.funcPage .title').addClass('neon-blue')
-            }else{
-              $('.funcPage .container').removeClass('keepGoing')
-              $('.funcPage .title').removeClass('neon-blue')
-            }
-
-            if(index == 3){
-              $('.problemPage .title').addClass('neon-purple')
-            }else{
-              $('.problemPage .title').removeClass('neon-purple')
-            }
-
-            if(index == 4){
-              $('.teamPage .title').addClass('neon-yellow')
-            }else{
-              $('.teamPage .title').removeClass('neon-yellow')
-            }
-
-            if(index == 5){
-              $('.companyPage .title').addClass('neon-green')
-            }else{
-              $('.companyPage .title').removeClass('neon-green')
-            }
-
-
-            if(index == 6){
-              $('.aboutusPage .title').addClass('neon-red')
-            }else{
-              $('.aboutusPage .title').removeClass('neon-red')
-            }
-
             //using anchorLink
             // if(anchorLink == 'secondSlide'){
             //     alert("Section 2 ended loading");
