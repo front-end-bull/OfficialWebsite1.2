@@ -308,7 +308,7 @@
   <script type="text/javascript">
 
 
-
+    var $topBanner = $('#topBanner')
     var $background = $('#background')
 
     $(document).ready(function() {
@@ -366,9 +366,15 @@
           //events
           onLeave: function(index, nextIndex, direction){
             var leavingSection = $(this);
+           
           },
           afterLoad: function(anchorLink, index){
             var loadedSection = $(this);
+             if(index==1){
+              $topBanner.css("background","none")
+            }else{
+              $topBanner.css("background","rgba(0,0,0,0.8)")
+            }
             //using anchorLink
             // if(anchorLink == 'secondSlide'){
             //     alert("Section 2 ended loading");
