@@ -334,7 +334,7 @@ body{
   height: 2.5rem;
   position: absolute;
   bottom: 0;
-  padding-top: 1rem;
+  padding-top: 0.6rem;
 }
 
 .curtain .container{
@@ -345,6 +345,7 @@ body{
 }
 
 .curtain .left{
+  padding-top: 0.2rem;
   width: 4rem;
   float: left;
 }
@@ -365,7 +366,8 @@ body{
   }
 
 .curtain .center{
-  width: 2rem;
+  padding-top: 0.2rem;
+  width: 3rem;
   float: left;
 }
 
@@ -387,7 +389,7 @@ body{
 .curtain .right{
   float: right;
   position: relative;
-  top: -0.4rem;
+  /*top: -0.4rem;*/
 }
 
   .curtain .right .qrcode{
